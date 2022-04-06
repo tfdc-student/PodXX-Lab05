@@ -4,7 +4,7 @@ module "aci_tenant_site_02" {
   }
 
   source      = "qzx/tenant/aci"
-  tenant_name = "Pod${local.podNumber}_Tenant_Site02"
+  tenant_name = "Pod${local.podNumber}_Tenant_Site_02"
   vrfs        = ["Pod${local.podNumber}-VRF"]
   bridge_domains = {
     BD1 = {
