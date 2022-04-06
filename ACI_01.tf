@@ -4,7 +4,7 @@ module "aci_tenant_site_01" {
   }
 
   source      = "qzx/tenant/aci"
-  tenant_name = "Pod${local.podNumber}_Tenant_Site01"
+  tenant_name = "Pod${local.podNumber}_Tenant_Site_01"
   vrfs        = ["Pod${local.podNumber}-VRF-01", "Pod${local.podNumber}-VRF-02"]
 
   bridge_domains = {
@@ -18,7 +18,7 @@ module "aci_tenant_site_01" {
     }
   }
 
-  application_profiles = ["Pod${local.podNumber}-APP-PROF-01, Pod${local.podNumber}-APP-PROF-02"]
+  application_profiles = ["Pod${local.podNumber}-APP-PROF-01", "Pod${local.podNumber}-APP-PROF-02"]
   epgs = {
     EPG1 = {
       name                = "EPG-01"
