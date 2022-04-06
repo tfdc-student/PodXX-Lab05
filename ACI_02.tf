@@ -18,11 +18,11 @@ module "aci_tenant_site_02" {
       name                = "EPG_1"
       application_profile = "Pod${local.podNumber}_APP_PROF"
       bridge_domain       = "BD1"
-      domains             = ["uni/phys_MY_PHYSICAL_DOMAIN"]
+      domains             = ["uni/phys-MY_PHYSICAL_DOMAIN"]
       static_paths = [
         {
           vlan_id = parseint("20${local.podNumber}", 10)
-          path    = "topology/pod_1/protpaths_201_202/pathep_[PATH_A]"
+          path    = "topology/pod-1/protpaths-201-202/pathep-[PATH_A]"
         }
       ]
     }

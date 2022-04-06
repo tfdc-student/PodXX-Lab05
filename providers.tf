@@ -7,8 +7,8 @@ terraform {
 }
 
 locals {
-  aci_password = "ENTER PASSWORD PROVIDED BY THE INSTRUCTOR"
-  podNumber    = "ENTER POD NUMBER, IF BELOW 10 IN 0X FORMAT"
+  aci_password = "MYPASS"
+  podNumber    = "99"
   aci_url_01   = "https://172.16.0.11"
   aci_url_02   = "https://172.16.0.12"
   username     = "admin"
